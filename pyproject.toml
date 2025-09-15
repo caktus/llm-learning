@@ -1,0 +1,20 @@
+[project]
+name = "llm-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "jupyterlab>=4.4.7",
+    "pandas>=2.3.2",
+    "psycopg>=3.2.10",
+]
+
+[tool.ruff]
+line-length = 100
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.3.0",
+    "ruff>=0.13.0",
+]
