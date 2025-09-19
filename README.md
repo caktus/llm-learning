@@ -5,6 +5,8 @@ A collection of notebooks and resources for learning about Large Language Models
 
 ### Setup
 
+Install [Ollama](https://ollama.com/download)
+
 Add the following to your `.envrc` file:
 
 ```sh
