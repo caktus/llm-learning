@@ -17,6 +17,11 @@ dependencies = [
     "beautifulsoup4>=4.13.5",
     "lxml>=6.0.2",
     "sqlalchemy>=2.0.43",
+    "langchain-community>=0.3.30",
+    "langchain-ollama>=0.3.9",
+    "langchain-openai>=0.3.34",
+    "langgraph>=0.6.8",
+    "pydantic-ai>=1.0.14",
 ]
 
 [tool.ruff]
