@@ -16,6 +16,8 @@ dependencies = [
     "llm-ollama>=0.14.0",
     "openai-agents[litellm]>=0.3.1",
     "pydantic-ai>=1.0.10",
+    "sqlalchemy>=2.0.43",
+    "langchain-community>=0.3.30",
 ]
 
 [tool.ruff]
