@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: llm_learning
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "54222:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
