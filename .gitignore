@@ -2,3 +2,6 @@
 .envrc
 *.pyc
 .ipynb_checkpoints/
+.vscode/
+__pycache__/
+.ruff_cache/

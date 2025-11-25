@@ -26,3 +26,22 @@ Then run:
 ```sh
 jupyter-lab
 ```
+
+### Database Setup
+
+Add to your `.envrc` file:
+
+```sh
+# postgres
+export PGHOST=localhost
+export PGPORT=54222
+export PGUSER=llm_learning
+export PGDATABASE=llm_learning
+export DATABASE_URL=postgresql+psycopg://llm_learning@localhost:54222/llm_learning
+```
+
+Start container services:
+
+```sh
+docker-compose up -d
+```
