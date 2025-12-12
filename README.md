@@ -45,3 +45,7 @@ Start container services:
 ```sh
 docker-compose up -d
 ```
+
+## License
+
+This work is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). See [LICENSE.txt](LICENSE.txt) for details.
