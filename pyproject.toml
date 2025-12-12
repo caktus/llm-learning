@@ -26,7 +26,7 @@ dependencies = [
 ]
 
 [tool.ruff]
-line-length = 100
+line-length = 60
 
 [dependency-groups]
 dev = [
