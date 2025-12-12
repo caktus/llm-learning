@@ -5,9 +5,7 @@ from pathlib import Path
 from pydantic_ai import Agent
 from rich import print
 
-if (
-    path := Path(__file__).parent.parent.parent
-) not in sys.path:
+if (path := Path(__file__).parent.parent.parent) not in sys.path:
     print(f"Adding {path} to sys.path")
     sys.path.insert(0, str(path))
 
@@ -36,9 +34,7 @@ def cactify_name(name: str) -> str:
 async def main():
     result1 = await agent.run(
         "What would my name, Colin, be if it were cactus-ified?",
-        model=get_model(
-            "openai:gpt-4o-mini", debug_http=True
-        ),
+        model=get_model("openai:gpt-4o-mini", debug_http=True),
     )
     print("Response:", result1.output)
     print(result1.all_messages())

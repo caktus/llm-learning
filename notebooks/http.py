@@ -9,9 +9,7 @@ async def log_request(request: httpx.Request):
     if request.content:
         try:
             req_json = json.loads(request.content)
-            print(
-                f"[bold cyan]>>> REQUEST[/bold cyan] {request.method} {request.url}"
-            )
+            print(f"[bold cyan]>>> REQUEST[/bold cyan] {request.method} {request.url}")
             print_json(data=req_json)
         except json.JSONDecodeError:
             pass
@@ -22,9 +20,7 @@ async def log_response(response: httpx.Response):
     await response.aread()
     try:
         resp_json = json.loads(response.content)
-        print(
-            f"[bold green]<<< RESPONSE[/bold green] {response.status_code}"
-        )
+        print(f"[bold green]<<< RESPONSE[/bold green] {response.status_code}")
         print_json(data=resp_json)
     except json.JSONDecodeError:
         pass
