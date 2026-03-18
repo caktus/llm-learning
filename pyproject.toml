@@ -23,6 +23,7 @@ dependencies = [
     "langchain-openai>=0.3.34",
     "langgraph>=0.6.8",
     "pydantic-ai>=1.0.14",
+    "pydantic-ai-backend[console,docker]>=0.1.14",
 ]
 
 [tool.ruff]
